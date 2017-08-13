@@ -22,7 +22,7 @@ app.get('/page',function(req,res){
 });
 
 
-app.get('/ui/page1',function(req,res){
+app.get('/page1',function(req,res){
 	res.sendFile(path.join(_dirname,'ui','page1.html'));
 });
 
