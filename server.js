@@ -25,7 +25,7 @@ var page1 = {
     
     <div>
         <p>
-            This is Page 1  my Third Paragraph.
+            This is my Page 1 Third Paragraph.
         </p>
     </div>`,
 }
