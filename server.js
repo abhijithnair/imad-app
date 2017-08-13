@@ -17,20 +17,20 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/page',function(req,res){
+app.get('/page',function(req, res){
 	res.send('That how simple respond takes place.');
 });
 
 
-app.get('/page1',function(req,res){
+app.get('/page1',function(req, res){
 	res.sendFile(path.join(_dirname,'ui','page1.html'));
 });
 
-app.get('/ui/page2',function(req,res){
+app.get('/ui/page2',function(req, res){
 	res.sendFile(path.join(_dirname,'ui','page2.html'));
 });
 
-app.get('/ui/page1',function(req,res){
+app.get('/ui/page3',function(req, res){
 	res.sendFile(path.join(_dirname,'ui','page3.html'));
 });
 
