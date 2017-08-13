@@ -17,17 +17,21 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/page1',function(req,res){
-	res.send('Page 1- Fuck you');
+app.get('/page',function(req,res){
+	res.send('That how simple respond takes place.');
 });
 
 
-app.get('/page2',function(req,res){
-	res.send('Page 2- Fuck you');
+app.get('/ui/page1',function(req,res){
+	res.sendFile(path.join(_dirname,'ui','My Page 1'));
 });
 
-app.get('/page3',function(req,res){
-	res.send('Page 3- And Fuck you');
+app.get('/ui/page2',function(req,res){
+	res.sendFile(path.join(_dirname,'ui','My Page 2'));
+});
+
+app.get('/ui/page1',function(req,res){
+	res.sendFile(path.join(_dirname,'ui','My Page 3'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
