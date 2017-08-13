@@ -30,6 +30,11 @@ var page1 = {
     </div>`,
 }
 
+function crreateTemplate(data){
+    var title = data.title;
+    var date = data.date;
+    var content = data.content;
+    
 
 var htmlTemplate = `
     <html>
@@ -66,7 +71,7 @@ var htmlTemplate = `
 </html>
     `;
 
-
+}
 
 
 
