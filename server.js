@@ -19,13 +19,13 @@ var page1 = {
     
     <div>
         <p>
-            This is my Page 1  Second Paragraph.
+            This is my Page 2  Second Paragraph.
         </p>
     </div>
     
     <div>
         <p>
-            This is my Page 1 Third Paragraph.
+            This is Page 3  my Third Paragraph.
         </p>
     </div>`,
 }
@@ -69,82 +69,6 @@ var htmlTemplate = `
         
   
 </html>
-
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-         <a href="page1">Page1</a>
-         <a href="page2">Page2</a>
-         <a href="page3">Page3</a>
-     </div>
-    
-    <hr/>
-   <div class = container>
-    <div>
-        ${Page1}
-    </div>
-    
-    <div>
-        ${date}
-    </div>
-    
-    ${content}
-</div>
-        
-  </body>
-      
-        
-  
-</html>
-    `;
-return htmlTemplate;
-}
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-app.get('/ui/style.css', function (req, res) {
-  res.send(createTemplate(page1));
-});
-
     `;
 return htmlTemplate;
 }
@@ -161,7 +85,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ui/style.css', function (req, res) {
-  res.send(createTemplate(page1));
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
@@ -174,7 +98,7 @@ app.get('/page',function(req, res){
 
 
 app.get('/page1',function(req, res){
-	res.sendFile(path.join(__dirname,'ui','page1.html'));
+	res.send(createTemplate(page1));
 });
 
 app.get('/page2',function(req, res){
