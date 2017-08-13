@@ -27,7 +27,8 @@ var page1 = {
         <p>
             This is Page 3  my Third Paragraph.
         </p>
-    </div>`,
+    </div>
+    `,
 }
 
 function crreateTemplate(data){
@@ -63,8 +64,39 @@ var htmlTemplate = `
     
     ${content}
 </div>
+  <body>
+     <div class=container>
+         <a href="/">Home</a>
+         <a href="page1">Page1</a>
+         <a href="page2">Page2</a>
+         <a href="page3">Page3</a>
+     </div>
+    
+    <hr/>
+   <div class = container>
+    <div>
+        ${Page1}
+    </div>
+    
+    <div>
+        ${date}
+    </div>
+    
+    ${content}
+</div>
         
   </body>
+      
+        
+  
+</html>
+    `;
+return htmlTemplate;
+}
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
       
         
   
