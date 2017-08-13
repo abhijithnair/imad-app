@@ -31,9 +31,40 @@ var page1 = {
 }
 
 
-var htmlTemplate = {
+var htmlTemplate = `
+    <html>
+    <head>
+        <title>Page1|Info</title>
+          <link href="/ui/style.css" rel="stylesheet" />
+          <meta name= "viewport" content = "width-device-width"  initial-scale= "1"> 
+    </head>
+  <body>
+     <div class=container>
+         <a href="/">Home</a>
+         <a href="page1">Page1</a>
+         <a href="page2">Page2</a>
+         <a href="page3">Page3</a>
+     </div>
     
-}
+    <hr/>
+   <div class = container>
+    <div>
+        ${Page1}
+    </div>
+    
+    <div>
+        ${date}
+    </div>
+    
+    ${content}
+</div>
+        
+  </body>
+      
+        
+  
+</html>
+    `;
 
 
 
