@@ -106,10 +106,6 @@ var htmlTemplate = `
        ${heading}
     </h3>
     <div>
-        
-    </div>
-    
-    <div>
         ${date}
     </div>
     
