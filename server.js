@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 
-var pages = {
+var articles = {
     page1 : {
     title : 'Page1|Info',
     heading : 'Page1',
@@ -137,7 +137,7 @@ app.get('/:pageName',function(req, res){
     // pages[pageName] == {} content object for pageOne
     var pageName = req.params.pageName;
     
-	res.send(createTemplate(pages[pageName]));
+	res.send(createTemplate(articles[pageName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
