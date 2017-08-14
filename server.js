@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 
 var pages = {
-    page1 : {
+    pageOne : {
     title : 'Page1|Info',
     heading : 'Page1',
     date : 'August 1',
@@ -31,7 +31,7 @@ var pages = {
     </div>
     `
 },
-    page2 : {title : 'Page2|Personal Info',
+    pageTwo : {title : 'Page2|Personal Info',
     heading : 'Page2',
     date : 'August 10',
     content : `<div>
@@ -52,7 +52,7 @@ var pages = {
         </p>
     </div>
     `},
-    page3 : {
+    pageThree : {
         title : 'Page3|Contact',
     heading : 'Page3',
     date : 'August 12',
@@ -145,7 +145,11 @@ app.get('/page',function(req, res){
 });
 
 
-app.get('/page1',function(req, res){
+app.get('/:pageName',function(req, res){
+    // pageName == pageOne
+    // pages[pageName] == {} content object for pageOne
+    var pageName = req.params.pageName;
+    
 	res.send(createTemplate(page1));
 });
 
