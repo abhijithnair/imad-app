@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 
 var pages = {
-    pageOne : {
+    page1 : {
     title : 'Page1|Info',
     heading : 'Page1',
     date : 'August 1',
@@ -31,7 +31,7 @@ var pages = {
     </div>
     `
 },
-    pageTwo : {title : 'Page2|Personal Info',
+    page2 : {title : 'Page2|Personal Info',
     heading : 'Page2',
     date : 'August 10',
     content : `<div>
@@ -52,7 +52,7 @@ var pages = {
         </p>
     </div>
     `},
-    pageThree : {
+    page3 : {
         title : 'Page3|Contact',
     heading : 'Page3',
     date : 'August 12',
