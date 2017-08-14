@@ -64,27 +64,6 @@ var htmlTemplate = `
     
     ${content}
 </div>
-  <body>
-     <div class=container>
-         <a href="/">Home</a>
-         <a href="page1">Page1</a>
-         <a href="page2">Page2</a>
-         <a href="page3">Page3</a>
-     </div>
-    
-    <hr/>
-   <div class = container>
-    <div>
-        ${Page1}
-    </div>
-    
-    <div>
-        ${date}
-    </div>
-    
-    ${content}
-</div>
-        
   </body>
       
         
