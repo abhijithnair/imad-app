@@ -7,7 +7,8 @@ app.use(morgan('combined'));
 
 
 
-var page1 = {
+var pages = {
+    page1 = {
     title : 'Page1|Info',
     heading : 'Page1',
     date : 'August 1',
@@ -29,7 +30,30 @@ var page1 = {
         </p>
     </div>
     `
-};
+},
+    page2 = {title : 'Page2|Personal Info',
+    heading : 'Page2',
+    date : 'August 10',
+    content : `<div>
+        <p>
+            This is my Page 1 First Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is my Page 2  Second Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is Page 3  my Third Paragraph.
+        </p>
+    </div>
+    },
+    page3 = {},
+    };
 
 function createTemplate(data){
     var title = data.title;
