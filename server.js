@@ -51,9 +51,8 @@ var pages = {
             This is Page 3  my Third Paragraph.
         </p>
     </div>
-    },
-   
-   page3 = {
+    `},
+      page3 = {
         title : 'Page3|Contact',
     heading : 'Page3',
     date : 'August 12',
@@ -74,8 +73,9 @@ var pages = {
             This is Page 3  my Third Paragraph.
         </p>
     </div>
-   
+   `
    },
+   
     };
 
 function createTemplate(data){
