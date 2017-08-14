@@ -28,8 +28,8 @@ var page1 = {
             This is Page 3  my Third Paragraph.
         </p>
     </div>
-    `,
-}
+    `
+};
 
 function crreateTemplate(data){
     var title = data.title;
