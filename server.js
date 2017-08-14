@@ -52,7 +52,51 @@ var pages = {
         </p>
     </div>
     },
-    page3 = {},
+    page3 = { 
+    title : 'Page3|Contact',
+    heading : 'Page3',
+    date : 'August 12',
+    content : `<div>
+        <p>
+            This is my Page 1 First Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is my Page 2  Second Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is Page 3  my Third Paragraph.
+        </p>
+    </div>
+   },
+   page3 = {
+        title : 'Page3|Contact',
+    heading : 'Page3',
+    date : 'August 12',
+    content : `<div>
+        <p>
+            This is my Page 1 First Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is my Page 2  Second Paragraph.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            This is Page 3  my Third Paragraph.
+        </p>
+    </div>
+   
+   },
     };
 
 function createTemplate(data){
