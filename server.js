@@ -98,12 +98,6 @@ app.get('/', function (req, res) {
 });
 
       
-        
-  
-</html>
-    `;
-return htmlTemplate;
-}
 
 
 
