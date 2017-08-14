@@ -137,7 +137,7 @@ app.get('/:pageName',function(req, res){
     // pages[pageName] == {} content object for pageOne
     var pageName = req.params.pageName;
     
-	res.send(createTemplate(page1));
+	res.send(createTemplate(pages));
 });
 
 app.get('/ui/style.css', function (req, res) {
