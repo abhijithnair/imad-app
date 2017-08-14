@@ -55,7 +55,7 @@ var htmlTemplate = `
     <hr/>
    <div class = container>
     <div>
-        ${Page1}
+        ${page1}
     </div>
     
     <div>
