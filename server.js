@@ -52,7 +52,7 @@ var pages = {
         </p>
     </div>
     `},
-      page3 = {
+    page3 = {
         title : 'Page3|Contact',
     heading : 'Page3',
     date : 'August 12',
