@@ -88,7 +88,7 @@ function createTemplate(data){
 var htmlTemplate = `
     <html>
     <head>
-        <title>Page1|Info</title>
+        <title>${title}</title>
           <link href="/ui/style.css" rel="stylesheet" />
           <meta name= "viewport" content = "width-device-width"  initial-scale= "1"> 
     </head>
@@ -106,7 +106,7 @@ var htmlTemplate = `
        ${heading}
     </h3>
     <div>
-        ${page1}
+        
     </div>
     
     <div>
