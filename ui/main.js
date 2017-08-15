@@ -6,7 +6,7 @@ element.innerHTML = "This is JavaScript";
 
 //Move the image
 
-var img = document.getElemntById('dina');
+var img = document.getElementById('dina');
 
 
 function moveRight() {
