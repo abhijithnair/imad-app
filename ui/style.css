@@ -4,6 +4,10 @@ body {
     margin-top: 75px;
 }
 
+.image{
+    height: 300px;
+    width: 300px;
+}
 .center {
     text-align: center;
 }
