@@ -12,10 +12,10 @@ var counter = 0;
 
 button.onclick = function(){
     //create a request object
-    var request =new xmlHTMLRequest();
+    var request =new xmlHttpRequest();
     //Capture the response and store it in variable
     request.onreadystatechange = function(){
-        if(request.onreadystatechange==xmlHTMLRequest.DONE){
+        if(request.onreadystatechange==xmlHttpRequest.DONE){
             //Take some action.
             if(request.status==100){
               var counter = request.responseText();
