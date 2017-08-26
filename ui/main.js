@@ -2,7 +2,7 @@ console.log('loaded!');
 //Change the text of the main-text div
 var element = document.getElementById('main-text');
 
-element.innerHTML = "Hi! My name is Abhijith Nair";
+
 
 
 
