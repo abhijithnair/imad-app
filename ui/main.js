@@ -7,7 +7,7 @@ element.innerHTML = "Hi! My name is Abhijith Nair";
 
 
 var button = document.getElementById('counter');
-buttin.onclick = function(){
+button.onclick = function(){
     //makke a requst to the counter endpoint
     
     //Capture the response and store it in variable
