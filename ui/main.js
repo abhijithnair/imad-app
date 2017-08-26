@@ -27,7 +27,7 @@ button.onclick = function(){
     };
     
     // make a request object
-   // counter = counter +1;
+   counter = counter +1;
   request.open('GET','http://abhijitnair6.imad.hasura-app.io/counter',true);
    request.send(null);
 };
