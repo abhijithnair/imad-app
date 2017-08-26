@@ -123,18 +123,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:pageName',function(req, res){
-    // pageName == pageOne
-    // pages[pageName] == {} content object for pageOne
-    var pageName = req.params.pageName;
-  	res.send(createTemplate(articles[pageName]));
-});
-
-var counter = 0;
-app.get('/counter',function(req, res){
-    counter = counter + 1;
-    res.send(counter.toString());
-});
 
 var names = [];
 app.get('/submit-name/:name',function(req, res){  //URL: /Submit-name?name=xxx
@@ -145,7 +133,19 @@ app.get('/submit-name/:name',function(req, res){  //URL: /Submit-name?name=xxx
     res.send(JSON.stringify(names));
 });
 
+var counter = 0;
+app.get('/counter',function(req, res){
+    counter = counter + 1;
+    res.send(counter.toString());
+});
 
+
+app.get('/:pageName',function(req, res){
+    // pageName == pageOne
+    // pages[pageName] == {} content object for pageOne
+    var pageName = req.params.pageName;
+  	res.send(createTemplate(articles[pageName]));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
