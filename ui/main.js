@@ -7,7 +7,7 @@ element.innerHTML = "Hi! My name is Abhijith Nair";
 
 
 var button = document.getElementById('counter');
-var counter = 0;
+
 
 
 button.onclick = function(){
