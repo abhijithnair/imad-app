@@ -1,9 +1,3 @@
-console.log('loaded!');
-//Change the text of the main-text div
-var element = document.getElementById('main-text');
-
-
-
 
 
 var button = document.getElementById('counter');
@@ -27,7 +21,7 @@ button.onclick = function(){
     };
     
     // make a request object
-   counter = counter +1;
+  
   request.open('GET','http://abhijitnair6.imad.hasura-app.io/counter',true);
    request.send(null);
 };
