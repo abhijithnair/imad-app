@@ -11,13 +11,23 @@ var counter = 0;
 
 
 button.onclick = function(){
-    //makke a requst to the counter endpoint
-    
+    //create a request object
+    var request =new xmlHTMLRequest();
     //Capture the response and store it in variable
+    request.onreadystatechange = function(){
+        if(request.onreadystatechange==xmlHTMLRequest.DONE){
+            //Take some action.
+            if(request.status==100){
+              var counter = request.responseText();
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+            }
+        }
+        //not done yet
+    };
     
-    
-    // render the variable in correct span
-    counter = counter +1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    // make a request object
+   // counter = counter +1;
+  request.open('GET','http://abhijitnair6.imad.hasura-app.io/counter',true);
+   request.send(null) ;
 };
