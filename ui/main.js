@@ -4,18 +4,17 @@ var element = document.getElementById('main-text');
 
 element.innerHTML = "Hi! My name is Abhijith Nair";
 
-//Move the image
-
-var img = document.getElementById('dina');
-var marginLeft = 0;
-
-function moveRight() {
-    marginLeft = marginLeft + 10;
- img.style.marginLeft = marginLeft + 'px';
-}
 
 
-img.onclick = function() {
-        var interval = setInterval(moveRight, 50);
-  
+var button = document.getElementById('counter');
+buttin.onclick = function(){
+    //makke a requst to the counter endpoint
+    
+    //Capture the response and store it in variable
+    
+    
+    // render the variable in correct span
+    counter = counter +1;
+    var span = document.getElementById('count');
+    span.innerHTML = counter.toString();
 };
