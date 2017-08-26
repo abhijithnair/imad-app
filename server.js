@@ -164,7 +164,7 @@ app.get('/pages/:pageName',function(req, res){
     // pageName == pageOne
     // pages[pageName] == {} content object for pageOne
     
-    pool.query("SELECT * FROM page WHERE title ='" +req.params.pageName + "'",function(err,result){
+    pool.query("SELECT * FROM page WHERE title =$1", [req.params.pageName],function(err,result){
   if(err){
       res.status(500).send(err.toString());
   }else {
