@@ -20,23 +20,7 @@ var articles = {
     title : 'Page1|Info',
     heading : 'Page1',
     date : 'August 1',
-    content : `<div>
-        <p>
-            This is my Page 1 First Paragraph.
-        </p>
-    </div>
-    
-    <div>
-        <p>
-            This is my Page 2  Second Paragraph.
-        </p>
-    </div>
-    
-    <div>
-        <p>
-            This is Page 3  my Third Paragraph.
-        </p>
-    </div>
+    content : `
     `
 },
     page2 : {title : 'Page2|Personal Info',
