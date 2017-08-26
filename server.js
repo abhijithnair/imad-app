@@ -135,6 +135,17 @@ app.get('/counter',function(req, res){
     res.send(counter.toString());
 });
 
+var names = [];
+app.get('/submit-name/:name',function(req, res){  //URL: /Submit-name?name=xxx
+    // Get the name from the request
+    var name = req.query.name;
+    names.push(name);
+    // JSON: Javascript Object notation
+    res.send(JSON.stringify(names));
+    
+});
+
+
 app.get('/:pageName',function(req, res){
     // pageName == pageOne
     // pages[pageName] == {} content object for pageOne
@@ -155,15 +166,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var names = [];
-app.get('/submit-name/:name',function(req, res){  //URL: /Submit-name?name=xxx
-    // Get the name from the request
-    var name = req.query.name;
-    names.push(name);
-    // JSON: Javascript Object notation
-    res.send(JSON.stringify(names));
-    
-});
 
 app.get('/page',function(req, res){
 	res.send('That how simple respond takes place.');
