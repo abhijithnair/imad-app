@@ -142,16 +142,13 @@ app.get('/submit-name/:name',function(req, res){  //URL: /Submit-name?name=xxx
     names.push(name);
     // JSON: Javascript Object notation
     res.send(JSON.stringify(names));
-    
 });
-
 
 app.get('/:pageName',function(req, res){
     // pageName == pageOne
     // pages[pageName] == {} content object for pageOne
     var pageName = req.params.pageName;
-    
-	res.send(createTemplate(articles[pageName]));
+  	res.send(createTemplate(articles[pageName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -170,9 +167,6 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/page',function(req, res){
 	res.send('That how simple respond takes place.');
 });
-
-
-
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
