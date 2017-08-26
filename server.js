@@ -160,11 +160,22 @@ app.get('/submit-name',function(req, res){  //URL: /Submit-name?name=xxx
     res.send(JSON.stringify(names));
 });
 
-app.get('/:pageName',function(req, res){
+app.get('/pages/:pageName',function(req, res){
     // pageName == pageOne
     // pages[pageName] == {} content object for pageOne
-    var pageName = req.params.pageName;
-  	res.send(createTemplate(articles[pageName]));
+    
+    pool.query("SELECT * FROM page HWERE title =" +req.param.pageName,function(err,result){
+  if(err){
+      res.status(500).send(err.toString());
+  }else {
+         if(result.rows.length === 0){
+             res.status(404).send('Page1 was not found');
+         }else {
+             var pageData = result.rows[0];
+             res.send(createTemplate(pageData));
+         }
+  }
+ }); 	
 });
 
 app.get('/ui/style.css', function (req, res) {
