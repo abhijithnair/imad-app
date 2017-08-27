@@ -98,8 +98,6 @@ render();
 
 
 
-
-
 //IMAD Codings starts  below
 var button = document.getElementById('counter');
 
