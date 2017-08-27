@@ -55,6 +55,6 @@ submit.onclick = function() {
   //Mke the request
   var nameInput = document.getElementById('name');
   var name = nameInput.value;
-  request.open('GET','http://abhijitnair6.imad.hasura-app.io/submit-name?name=' +name , true);
+  request.open('POST','http://abhijitnair6.imad.hasura-app.io/submit-name?name=' +name , true);
   request.send(null);
 };
